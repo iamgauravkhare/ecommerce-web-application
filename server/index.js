@@ -17,7 +17,7 @@ const { cloudinaryConnection } = require("./configuration/cloudinary");
 const authenticationRoutes = require("./routes/authentication");
 
 const PORT = process.env.PORT || 4000;
-const allowedOrigins = ["http://localhost:3000"];
+// const allowedOrigins = ["http://localhost:3000"];
 
 databaseConnection();
 cloudinaryConnection();
@@ -25,7 +25,7 @@ cloudinaryConnection();
 app.use("/favicon.ico", (req, res) => res.status(204));
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: "*",
     credentials: true,
     exposedHeaders: "Set-Cookie",
   })
