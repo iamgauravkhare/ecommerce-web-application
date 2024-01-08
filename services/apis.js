@@ -1,6 +1,6 @@
 // const BASE_URL_2 = import.meta.env.VITE_API_BASE_URL;
 // const BASE_URL = "http://localhost:4500/api/v1";
-const BASE_URL = "https://flipkart-clone-server-rzgx.onrender.com";
+const BASE_URL = "https://flipkart-clone-server-rzgx.onrender.com/api/v1";
 
 // console.log(BASE_URL_2);
 
